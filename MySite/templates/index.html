@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+</head>
+<body bgcolor="black">
+<center>
+    <div class="pt-5">
+        <div class="text-head-block text-head" style="font-color: black;">
+            <h2 class="text-head">Hello, I'm <br><strong class="text-head">Kovalenko Aleksander</strong></h2>
+            <strong class="text-head">AND THIS IS MY REZUME</strong>
+        </div>
+        <div class="img-head">
+            <img id="img-head" src="{{ imagehead.myimag.url }}" style="left: 0;">
+        </div>
+    </div>
+</center>
+</body>
+<style>
+
+    .pt-5 {
+        display: block;
+        background-color: #e9e9e9;
+        list-style-type: none;
+        border-radius: 10px;
+        margin: 25px 20px 10px 20px;
+        padding: 15px 15px 15px 15px;
+    }
+    .text-head {
+        display: block-inline;
+        color: black;
+        font-family: 'Nunito Sans';
+        font-weight: 200px;
+    }
+    .d-block {
+        font-style: normal;
+        font-size: 50px;
+    }
+    .fadeInUp {
+        word-spacing: 5px;
+    }
+    #img-head {
+        width: 30%;
+        border-radius: 200px;
+    }
+    .img-head {
+        display: block-inline;
+    }
+</style>
+</html>
