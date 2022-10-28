@@ -11,3 +11,4 @@ class ImageHead(models.Model):
     class Meta:
         verbose_name = 'Мое фото'
         verbose_name_plural = 'Мои фото'
+
