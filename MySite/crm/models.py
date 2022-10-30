@@ -12,3 +12,4 @@ class ImageHead(models.Model):
         verbose_name = 'Мое фото'
         verbose_name_plural = 'Мои фото'
 
+
