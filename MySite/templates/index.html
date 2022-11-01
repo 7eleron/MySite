@@ -20,35 +20,38 @@
     </div>
 </div>
 <div class="pt-2">
-    <p class="name-skills">Skills</p>
-    <br>
-    <div class="skills">
-        <p>Django, DRF</p>
-        <div class="simple-rating">
+    <div class="personal-information">
+        <p class="information">Personal information</p>
+        <div class="skills">
+            <p>Django, DRF</p>
+                <div class="simple-rating"></div>
+            </p>
+        </div>
+        <div class="skills">
+            <p>Aiohttp
+                <div class="simple-rating"></div>
+            </p>
         </div>
     </div>
-    <br>
-    <div class="skills">
-        <p>Aiohttp</p>
-        <div class="simple-rating">
-        </div>
-    </div>
-    <div class="skills">
-        <p>Pandas</p>
-        <div class="simple-rating">
-        </div>
-    </div>
-    <br>
-    <div class="skills">
-        <p>Numpy</p>
-        <div class="simple-rating">
-        </div>
+    <div class="all-skills">
+        <p class="skills-name">Skills</p>
+        {% for skill in skills %}
+            <div class="skills">
+                <p>{{ skill }}</p>
+                <div class="simple-rating">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        {% endfor %}
     </div>
 </div>
 <div class="pt-3">
     <!-- карусель -->
 	{% include 'carusel.html' %}
 </div>
-
 </body>
 </html>
