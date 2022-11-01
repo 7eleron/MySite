@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cms.apps.CmsConfig',
     'skills.apps.SkillsConfig',
+    'information.apps.InformationConfig',
 ]
 
 MIDDLEWARE = [

@@ -12,7 +12,7 @@ body {
     margin: 25px 20px 10px 20px;
     padding: 0px;
     height: auto;
-    width: 600px;
+    width: 700px;
 }
 .pt-2 {
     background-color: white;
@@ -20,7 +20,7 @@ body {
     margin: 25px 20px 10px 20px;
     padding: 30px;
     height: auto;
-    width: 540px;
+    width: 700px;
 }
 .pt-3 {
     background-color: white;
@@ -28,7 +28,7 @@ body {
     margin: 25px 20px 10px 20px;
     padding: 10px;
     height: 200px;
-    width: 580px;
+    width: 700px;
 }
 .head-block {
     display: inline-block;
@@ -65,9 +65,28 @@ body {
 .personal-information{
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
+    width: 400px;
     color: black;
     float: left;
+}
+.information {
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+}
+.per-info {
+    float: left;
+    margin: 3px;
+    width: 400px;
+}
+.per-info a.info {
+    display: inline-block;
+    float: left;
+    width: 200px;
+}
+.per-info a.data {
+    display: inline-block;
+    width: 190px;
 }
 .all-skills {
     width: 200px;
@@ -76,7 +95,7 @@ body {
 }
 .skills {
     float: left;
-    margin: 2px;
+    margin: 3px;
     width: 200px;
 }
 .skills p{
@@ -84,13 +103,10 @@ body {
     margin: 0%;
     
 }
-.information {
-    font-size: 30px;
-    margin: 0;
-}
 .skills-name {
     font-size: 30px;
     margin: 0;
+    text-align: center;
 }
 .simple-rating {
     display: inline-block;

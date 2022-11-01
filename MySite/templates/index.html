@@ -22,16 +22,20 @@
 <div class="pt-2">
     <div class="personal-information">
         <p class="information">Personal information</p>
-        <div class="skills">
-            <p>Django, DRF</p>
-                <div class="simple-rating"></div>
-            </p>
-        </div>
-        <div class="skills">
-            <p>Aiohttp
-                <div class="simple-rating"></div>
-            </p>
-        </div>
+        {% for info in personal_information %}
+            <div class="per-info">
+                {% if info.info == 'GitHub' %}
+                    <a class="info">{{ info.info }}</a>
+                    <a class="data" href="https://github.com/7eleron/">{{ info.data }}</a>
+                {% elif info.info == 'CodeWars' %}
+                <a class="info">{{ info.info }}</a>
+                <a class="data" href="https://www.codewars.com/users/7eleron">{{ info.data }}</a>
+                {% else %}
+                    <a class="info">{{ info.info }}</a>
+                    <a class="data">{{ info.data }}</a>
+                {% endif%}
+            </div>
+        {% endfor %}
     </div>
     <div class="all-skills">
         <p class="skills-name">Skills</p>
