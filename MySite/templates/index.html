@@ -11,7 +11,6 @@
 
 <div class="pt-1">
     <div class="text-head">
-        <p class="head-resum">My Resume</p>
         <p class="head-hi">Hello, I'm</p> 
         <p class="head-name">Kovalenko Aleksander</p>
     </div>
@@ -38,17 +37,13 @@
         {% endfor %}
     </div>
     <div class="all-skills">
-        <p class="skills-name">Skills</p>
-        {% for skill in skills %}
-            <div class="skills">
-                <p>{{ skill }}</p>
-                <div class="simple-rating">
+        <p class="skills">Skills</p>
+        {% for skill, level in skills.items %}
+            <p class="name-skill">{{ skill }}</p>
+            <div class="simple-rating">
+                {% for i in level %}
                     <span class="active"></span>
-                    <span class="active"></span>
-                    <span class="active"></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                {% endfor %}
             </div>
         {% endfor %}
     </div>

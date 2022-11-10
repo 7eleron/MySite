@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'cms.apps.CmsConfig',
     'skills.apps.SkillsConfig',
     'information.apps.InformationConfig',
+    'experience.apps.ExperienceConfig',
 ]
 
 MIDDLEWARE = [
@@ -108,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'ru-RU'
+LANGUAGE_CODE = 'en-US'
 
 TIME_ZONE = 'UTC'
 

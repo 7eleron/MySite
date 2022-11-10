@@ -9,7 +9,7 @@ class ImageHead(models.Model):
         return str(self.pk)
 
     class Meta:
-        verbose_name = 'Мое фото'
-        verbose_name_plural = 'Мои фото'
+        verbose_name = 'Head photo'
+        verbose_name_plural = 'Head photos'
 
 
