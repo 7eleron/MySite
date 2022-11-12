@@ -8,7 +8,7 @@
   }
 img {
 	background: #fff;
-	color: #3498db;
+	filter: grayscale(100%);
 	font-size: 36px;
 	line-height: 100px;
 	margin: 10px;

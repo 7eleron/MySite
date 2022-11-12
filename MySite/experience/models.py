@@ -8,6 +8,7 @@ class Experience(models.Model):
     date_end = models.DateField(default=datetime.date.today, verbose_name="End date")
     position = models.CharField(max_length=255, verbose_name="Position")
     responsibilities = models.CharField(max_length=255, verbose_name="Responsibilities")
+    stack = models.CharField(max_length=255, verbose_name="Stack", default="Python")
     company = models.CharField(max_length=255, verbose_name="Company")
 
     def __str__(self):

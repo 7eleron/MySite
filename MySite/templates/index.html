@@ -52,5 +52,22 @@
     <!-- карусель -->
 	{% include 'carusel.html' %}
 </div>
+<div class="pt-4">
+    <div class="experiences">
+        <p class="information">Experience as a developer</p>
+        {% for exp in experience %}
+            <div class="experience">
+                <p>
+                    <a class="exp_info">Dates: </a><a class="exp_data">{{ exp.date_start }} - {{ exp.date_end }}</a>
+                    <a class="exp_info">Position held: </a><a class="exp_data">{{ exp.position }}</a>
+                    <a class="exp_info">Responsibilities: </a><a class="exp_data">{{ exp.responsibilities }}</a>
+                    <a class="exp_info">Stack: </a><a class="exp_data">{{ exp.stack }}</a>
+                    <a class="exp_info">Company: </a><a class="exp_data">{{ exp.company }}</a>
+                </p>
+            </div>
+            <span class="line"></span>
+        {% endfor %}
+    </div>
+</div>
 </body>
 </html>
