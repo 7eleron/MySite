@@ -6,11 +6,14 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script> 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+<p class="information_cms">My works</p>
 <div class="content">
 	<div class="slider single-item">
 		{% for slide in slider_list %}
 		<div>
-			<img src="{{ slide.cms_img.url }}" class="d-block">
+			<a href="{{ slide.cms_text }}">
+				<img src="{{ slide.cms_img.url }}" class="d-block">
+			</a>
 		</div>
 		{% endfor %}
 	</div>

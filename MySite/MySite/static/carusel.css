@@ -1,24 +1,31 @@
+.information_cms {
+	width: 20vw;
+	font-size: 3vw;
+    margin: 2vw;
+    font-family: 'Helvetica';
+	text-align: center;
+	float: right;
+}
 .content {
-	
 	margin: auto;
 	padding: 30px;
 	width: 100%;
 	max-width: 600px;
 	box-sizing: border-box;
-  }
+}
 img {
-	background: #fff;
-	filter: grayscale(100%);
+	/* filter: grayscale(100%); */
 	font-size: 36px;
 	line-height: 100px;
-	margin: 10px;
+	margin: 1px;
 	padding: 2%;
 	position: relative;
 	text-align: center;
+	background-color: black;
+	border-radius: 5px;
 }
 .d-block{
 	height: 100px;
 	width: auto;
 	display: inline-block;
-	border-radius: 100%;
 }

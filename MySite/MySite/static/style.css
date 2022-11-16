@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(148, 148, 142);
+    background-color: rgb(54, 10, 95);
     font-family: 'Nunito Sans';
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@ body {
     margin: 0px;
 }
 .img-head {
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     width: 25vw;
     height: 25vw;
     display: inline-block;
@@ -144,7 +144,7 @@ body {
     content: '★';
 }
 .simple-rating > span.active {
-    color: black;
+    color: rgb(106, 10, 195);
     text-shadow: 1px 1px dark;
 }
 .experiences {
